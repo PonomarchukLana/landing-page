@@ -1,0 +1,47 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.lg-6 {
+    flex-basis: 48%;
+    max-width: 48%;
+}
+
+.lg-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+
+.md-12 {
+    @media (max-width: 767.98px) {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+.sm-6 {
+    @media (max-width: 575.98px) {
+        flex-basis: 48%;
+        max-width: 48%;
+    }
+}
+
+.sm-12 {
+    @media (max-width: 575.98px) {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+
+.mbMd-40 {
+    @media (max-width: 767.98px) {
+        margin-bottom: 40px;
+    }
+}
+
+.mbSm-40 {
+    @media (max-width: 575.98px) {
+        margin-bottom: 40px;
+    }
+}

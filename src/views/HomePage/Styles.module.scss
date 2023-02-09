@@ -1,0 +1,123 @@
+.mainScreen {
+    background: #F7F3F4;
+
+    @media (max-width: 575.98px) {
+        & section {
+
+            & div:first-child {
+                padding: 0 15px;
+            }
+
+            padding: 90px 0 0;
+        }
+    }
+}
+
+.dFlex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+.justifyBetween {
+    justify-content: space-between;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.pinkBg {
+    background: #FFBD9E;
+}
+
+.loginSection {
+    flex-wrap: wrap;
+    border-radius: 20px;
+    padding: 104px;
+
+    @media (max-width: 991.98px) {
+        padding: 40px 18px 54px;
+    }
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.heightContent {
+    height: max-content;
+}
+
+.mainImg {
+    position: relative;
+    min-height: 610px;
+    overflow: hidden;
+
+    @media (max-width: 575.98px) {
+        min-height: 90wh;
+    }
+
+    .rightImg {
+        position: absolute;
+        right: 0;
+        top: 0;
+        max-width: 100%;
+
+        @media (max-width: 575.98px) {
+            right: -100px;
+        }
+    }
+
+    .leftImg {
+        position: absolute;
+        bottom: 0;
+        max-width: 60%;
+
+        @media (max-width: 575.98px) {
+            bottom: 165px;
+            width: 200px;
+        }
+
+        & svg {
+            max-width: 100%;
+            height: 100%;
+        }
+
+        & .content {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            padding: 30px;
+
+            & p {
+                margin: 0;
+                white-space: nowrap;
+            }
+
+            @media (max-width: 767.98px) {
+                padding: 15px;
+
+                p:first-child {
+                    font-size: 15px;
+                }
+
+                p:last-child {
+                    font-size: 40px;
+                    line-height: 40px;
+                }
+            }
+        }
+    }
+}
+
+.smallTitleWrapp {
+    max-width: 352px;
+    margin: 0 auto;
+}
