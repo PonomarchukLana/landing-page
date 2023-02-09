@@ -1,0 +1,33 @@
+.item {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #D2D1D2;
+    margin-bottom: 24px;
+
+    & .contentBox {
+        flex-basis: 90%;
+        
+        & .content {
+            overflow: hidden;
+            transition: max-height 0.4s cubic-bezier(1, 0, 1, 0);
+            height: auto;
+            max-height: 9999px;
+        }
+
+        & .collapsed {
+            max-height: 0;
+            transition: max-height 0.45s cubic-bezier(0, 1, 0, 1);
+          }
+    }
+
+    & .line {
+        position: absolute;
+        transform: rotate(90deg);
+        transition: transform 0.4s cubic-bezier(1, 0, 1, 0);
+
+        &.rotate {
+            transform: rotate(0deg);
+            transition: transform 0.45s cubic-bezier(0, 1, 0, 1);
+        }
+    }
+}

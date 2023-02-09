@@ -1,0 +1,92 @@
+@keyframes hoverColored {
+    from {
+        background-color: #F2726C;
+        color: #fff;
+    }
+
+    to {
+        background-color: #fff;
+        color: #F2726C;
+        box-shadow: 0px 0px 0px 2px #F2726C;
+    }
+}
+
+@keyframes hoverColorless {
+    from {
+        box-shadow: none;
+    }
+
+    to {
+        box-shadow: 0px 0px 0px 2px #000;
+    }
+}
+
+.button {
+    border-color: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    line-height: 18px;
+    padding: 15px 36px;
+    border-radius: 30px;
+    width: max-content;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+
+    @media (max-width: 575.98px) {
+        padding: 15px;
+    }
+
+    &.colored {
+        background: #F2726C;
+        font-size: 13px;
+        color: #fff;
+        text-transform: uppercase;
+
+        &.hoverAnimation {
+            &:hover {
+                animation-name: hoverColored;
+                animation-duration: 1s;
+                background-color: #fff;
+                color: #F2726C;
+                box-shadow: 0px 0px 0px 2px #F2726C;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            font-size: 12px;
+        }
+    }
+
+    &.colorless {
+        background: #fff;
+        font-size: 16px;
+        color: #000;
+
+        &:hover {
+            animation-name: hoverColorless;
+            animation-duration: 1s;
+            box-shadow: 0px 0px 0px 2px #000;
+        }
+    }
+
+    &.round {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        padding: 0;
+        border-radius: 50%;
+
+        &:hover {
+            opacity: 0.9;
+        }
+    }
+
+    &.fullwidth {
+        width: 100%;
+    }
+}
